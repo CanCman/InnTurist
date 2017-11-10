@@ -1,0 +1,281 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	header
+		.top-line
+			.row
+				>div:nth-child(3)
+					.us-word
+						display: none
+		.top-menu
+			text-align: center
+			ul
+				padding: 0
+				li
+					margin-left: 45px
+		.header-content
+			.header-title
+				font-size: 49px
+	.direction
+		.fa:not(:first-child)
+			display: none
+	.direction-right
+		left: 595px!important
+	.direction-left
+		left: 272px!important
+	.rooms
+		.room
+			.overlay
+				font-size: 13px!important
+	footer
+		.number, .clock
+			margin-right: 0
+		.signature
+			margin-top: 20px
+
+	.catalog
+		.more
+			right: 15px !important
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	header
+		.top-line
+			.row
+				>div:nth-child(2)
+					float: right
+				>div:nth-child(3)
+					display: none
+		.top-menu
+			ul
+				li
+					margin-left: 9px
+		.header-content
+			.header-title
+				font-size: 35px
+	.direction
+		display: none!important
+	.rooms
+		.room
+			.overlay
+				font-size: 11px!important
+				pointer-events: none
+				span
+					font-size: 21px
+				&:hover
+					padding-top: 30px
+					a
+						margin: 15px auto
+	.about-us
+		margin-bottom: 50px
+		.businessman
+			display: none
+		.content
+			width: initial!important
+	.advantage
+		.row
+			>.col-sm-1
+				padding: 0
+	.news
+		.date
+			display: none
+	footer
+		.title-menu:first-child
+			line-height: 1.15
+		.title-map
+			font-size: 16px
+		.hidden-span
+			display: none
+		.number, .clock
+			font-size: 15px
+	.catalog
+		.more
+			width: auto !important
+			right: 15px !important
+	.catalog-nav
+		li
+			font-size: 17px !important
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	header
+		.top-line
+			.row
+				>div:first-child
+					padding: 0
+					i
+						display:flex!important
+						margin: auto
+						font-size: 40px
+				>div:nth-child(2)
+					display: none
+		.header-content, .top-menu
+			display: none
+	.top-menu-second, .pathClient, .sticker-profit, .callback, .about-us, .advantage, .comments, .news
+		display: none
+	.rooms
+		margin-bottom: 0
+		.title-separator
+			display: none
+		.row
+			>span
+				display: none!important
+			.room
+				margin-top: 20px
+				height: 280px
+				span
+					margin: 10px 0
+	footer
+		.row
+			display: flex
+			flex-direction: column
+			>div:first-child
+				margin-bottom: 0
+				img
+					margin-top: 0
+			>div:nth-child(3)
+				padding: 0 20px
+				text-align: center
+				order: 1
+				.fa-vk
+					margin-left: 0
+				i
+					// font-size: 30px!important
+				.social-bottom
+					display: inline-flex
+					justify-content: center
+					img
+						margin-top: -10px
+						height: 25px
+						width: 25px
+			>div:nth-child(4)
+				padding: 0 15px
+				.number
+					margin-top: 0
+					font-size: 35px
+					line-height: 1
+					font-weight: bold
+				.clock
+					margin-bottom: 15px
+					font-size: 17px
+			.signature
+			margin-top: 0
+
+		.title-map, .title-menu, .title-menu-inner, #map, ul, button, br
+			display: none
+
+	.cd-hero
+		display: none
+	.catalog-nav
+		ul
+			padding: 0
+			li
+				padding: 0 5px !important
+	.title-separator
+		margin: 15px 0
+		&::after
+			margin-top: 60px
+
+	.catalog
+		.room
+			margin-top: 30px !important
+			h3
+				font-size: 22px
+				color: $accent
+			>div:first-child
+				position: relative
+				.address, .info
+					position: absolute
+					z-index: 100
+					line-height: 3
+					background: rgba(96, 101, 108, 0.49)
+					color: $background-gray
+					width: 100%
+				.address
+					display: block
+					font-weight: 700
+					top: 0
+					i
+						padding: 0 15px
+				.info
+					bottom: 0
+					display: inline-flex
+					justify-content: space-around
+					i
+						padding-right: 10px
+			>div:not(:first-child), .more
+				display: none
+		.detail
+			margin-bottom: 60px !important
+			br
+				display: block
+			.detail-elem
+				vertical-align: top
+				width: 35% !important
+		.col-sm-2
+			position: absolute !important
+			right: 15px
+			bottom: 55px
+			.price
+				line-height: 1
+		.more, .reserve
+			color: #FFF
+			width: 50% !important
+			right: 0 !important
+			bottom: 0px !important
+		.resrve
+			background-color: $accent !important
+		.more
+			left: 0px !important
+			color: $accent !important
+			background-color: none
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.catalog
+		.room
+			.detail
+				.hidden-span
+					display: none
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

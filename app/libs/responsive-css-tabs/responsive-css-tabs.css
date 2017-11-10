@@ -1,0 +1,81 @@
+
+
+#more-popup section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+#more-popup input {
+  display: none;
+}
+
+#more-popup label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+#more-popup label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+#more-popup label[for*='1']:before {
+  content: '\f1cb';
+}
+
+#more-popup label[for*='2']:before {
+  content: '\f17d';
+}
+
+label[for*='3']:before {
+  content: '\f16b';
+}
+
+label[for*='4']:before {
+  content: '\f1a9';
+}
+
+#more-popup label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+#more-popup input:checked + label {
+  color: #555;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+  border: 1px solid #ddd;
+  border-top: 2px solid #3D9BE9;
+  border-bottom: 1px solid #fff;
+}
+
+#more-popup #tab1:checked ~ #content1,
+#more-popup #tab2:checked ~ #content2,
+#more-popup #tab3:checked ~ #content3,
+#more-popup #tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  #more-popup label {
+    font-size: 0;
+  }
+
+  #more-popup label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #more-popup label {
+    padding: 15px;
+  }
+}
