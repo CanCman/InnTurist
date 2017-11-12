@@ -192,7 +192,7 @@
 							<div class="address"><i class="fa fa-map-marker"></i>ул.Профсоюзная, д.9</div>
 							<div class="info">
 								<div><i class="fa fa-codepen"></i><span>1</span></div>
-								<div><i class="fa fa-arrows"></i><span>60 м2</span></div>
+								<div><i class="fa fa-arrows"></i><span>60 м<sup>2</sup></span></div>
 								<div><i class="fa fa-bed"></i><span> 2+2</span></div>
 								<div><i class="fa fa-building"></i><span>7/8</span></div>
 							</div>
@@ -202,7 +202,7 @@
 							<p>1-комнатная квартира в Спальном районе, 8/12 этаж, 2+1 спальных мест. Хороший ремонт, имеется новая современная мебель и вся необходимая бытовая техника.Рядом - Продуктовый магазин, СК"Триумф", ТЦ"Подсолнух"…</p>
 							<hr>
 							<div class="detail">
-								<div class="detail-elem"><i class="fa fa-arrows"></i><span><span class="hidden-span">Площадь:</span> 60 м2</span></div>
+								<div class="detail-elem"><i class="fa fa-arrows"></i><span><span class="hidden-span">Площадь:</span> 60 м<sup>2</sup></span></div>
 								<div class="detail-elem"><i class="fa fa-bed"></i><span><span class="hidden-span">Спал. мест:</span> 2+2</span></div>
 								<br>
 								<div class="detail-elem"><i class="fa fa-building"></i><span><span class="hidden-span">Этаж:</span> 7/8</span></div>
@@ -361,8 +361,14 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="background">
-					<i class="fa fa-map-marker"></i><span>ул.Профсоюзная, д.9</span>
-					<button class="btn">Забронировать</button>
+					<div class="rooms"><span>Однокомнатная квартира</span></div>
+					<div class="navigation">
+						<i class="fa fa-map-marker"></i><span>ул.Профсоюзная, д.9</span>
+						<button class="btn">Забронировать</button></div>
+					<div class="beadcrumbs">
+						<!-- <span>Каталог <i class="fa fa-angle-right"></i> Однокомнатные <i class="fa fa-angle-right"></i> ул.Профсоюзная, д.9</span> -->
+					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -380,29 +386,41 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<div class="price background">
-					<h3>Стоимость аренды</h3>
-					<span>Сутки</span><span>1800 руб.</span><br>
-					<span>Ночь</span><span>1500 руб.</span><br>
-					<span>Час</span><span>300 руб.</span>
-					<h3>Характеристики</h3>
-					<span>Комнат</span>
-					<span>1</span>
-					<hr>
-					<span>Комнат</span>
-					<span>1</span>
-					<hr>
-					<span>Комнат</span>
-					<span>1</span>
-					<hr>
-					<span>Комнат</span>
-					<span>1</span>
+				<div class="info background">
+					<div class="price">
+						<h3>Стоимость аренды</h3>
+						<div><div class="center-icon"><i class="fa fa-clock-o"></i></div><span>Час</span><span>300 руб.</span></div>
+						<hr>
+						<div><div class="center-icon"><i class="fa fa-bed"></i></div><span>Ночь</span><span>1500 руб.</span></div>
+						<hr>
+						<div><div class="center-icon"><i class="fa fa-sun-o"></i></div><span>Сутки</span><span>1800 руб.</span></div>
+					</div>
+					<div>
+						<h3>Характеристики</h3>
+						<div><span>Комнат</span>
+						<span>1</span></div>
+						<hr>
+						<div><span>Площадь</span>
+						<span>60 м<sup>2</sup></span></div>
+						<hr>
+						<div><span>Этаж</span>
+						<span>7/8</span></div>
+						<hr>
+						<div><span>Спальных мест</span>
+						<span>2+2</span></div>
+						<hr>
+						<div><span>Ремонт</span>
+						<span>Отличный</span></div>
+						<hr>
+						<div><span>Сан.узел</span>
+						<span>Объединенный</span></div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<div class="info background">
+				<div class="description background">
 					<input id="tab1" type="radio" name="tabs" checked>
 					<label for="tab1">Описание</label>
 
@@ -410,20 +428,12 @@
 					<label for="tab2">Состояние</label>
 
 					<input id="tab3" type="radio" name="tabs">
-					<label for="tab3">Состояние</label>
+					<label for="tab3">Условия</label>
 					<section id="content1">
 						<p>1-комнатная квартира в Спальном районе, 8/12 этаж, 2+1 спальных мест. Хороший ремонт, имеется новая современная мебель и вся необходимая бытовая техника.
 						Рядом - Продуктовый магазин, СК"Триумф", ТЦ"Подсолнух"…</p>
 					</section>
 					<section id="content2">
-
-					</section>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="background">
 					<p>Развлечения:
 						плазменный телевизор
 						безлимитный интернет Wi-Fi
@@ -449,11 +459,9 @@
 						шампунь
 						мыло
 					полотенце для душа</p>
-				</div>
-			</div>
-			<div class="col-sm-8">
-				<div class="background">
-					<p>Условия :
+					</section>
+					<section id="content3">
+						<p>Условия :
 						​
 						Заключается договор о краткосрочной аренде помещения по документу удостоверяющий личность клиента.
 
@@ -476,6 +484,14 @@
 						Сервис:
 
 					Смена постельного белья и полотенец раз в пять дней</p>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="background">
+					
 				</div>
 			</div>
 		</div>

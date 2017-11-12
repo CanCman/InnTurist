@@ -2,8 +2,10 @@
 
 #more-popup section {
   display: none;
+  height: 0;
   padding: 20px 0 0;
   border-top: 1px solid #ddd;
+  overflow: hidden;
 }
 
 #more-popup input {
@@ -62,6 +64,8 @@ label[for*='4']:before {
 #more-popup #tab3:checked ~ #content3,
 #more-popup #tab4:checked ~ #content4 {
   display: block;
+  opacity: 1;
+  height: auto;
 }
 
 @media screen and (max-width: 650px) {
