@@ -95,7 +95,7 @@ header
 					&:hover
 						background: $accent
 					img
-						vertical-align: sub
+						vertical-align: text-top
 						margin-right: 10px
 						width: 20px
 						height: 20px
@@ -845,26 +845,41 @@ footer
 
 
 .catalog-nav
-	// border-bottom: 1px
+	background: #fff
+	z-index: 10
+	width: 100%
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.1)
+	position: absolute
 	nav
 		ul
+			margin: 10px
 			height: 20px
 			text-align: center
+			line-height: initial
 			li
-				height: 20px
+				height: 15px
 				display: inline-block
 				border-left: 1px $accent solid
 				padding: 0 50px
-				font-size: 20px
+				font-size: 15px
 				a
 					display: block
-					line-height: 20px
+					line-height: 1
 					color: $background-dark
 					text-decoration: none
+					transition: color .7s
+					&:hover
+						color: #2f2e2e * 3.5
+						// font-weight: 500
+				&.selected
+					a
+						font-size: 16px
+						font-weight: 700
+						color: $accent
 			li:first-child
 				border: 0
 .catalog
+	margin-top: 90px
 	.owl-stage, .owl-stage-outer, .owl-carousel, .owl-item
 		height: 100%
 	.room
@@ -874,6 +889,9 @@ footer
 		position: relative
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.1)
 		color: $font-grey
+		transition: background .7s
+		&:hover
+			background: rgba(61,155,233, 0.03)
 		>div:first-child
 			padding: 0
 			.info, .address
@@ -945,6 +963,7 @@ footer
 				background: $accent / 1.1
 		&:first-child
 			margin-top: 55px
+
 .map-large
 	height: 500px
 	margin-bottom: 20px
@@ -968,6 +987,7 @@ footer
 		position: absolute
 		font-size: 35px
 		color: #fff 
+		z-index: 1000
 
 	.row > div
 		padding: 0
@@ -1037,10 +1057,33 @@ footer
 	.row:nth-child(3)
 		div>
 			animation: fadeIn 500ms
+		.btn
+			display: none
 		section
 			// transition: opacity 1s ease-out
-			animation: fadeIn 1s;
+			animation: fadeIn 1s
+			h3
+				margin: 0
+		#content2
+			column-gap: 10px
+			column-count: 2
+			padding: 0
+			margin-bottom: 10px
+			h3
+				margin: 0
+				padding: 15px 0
+			ul
+				display: inline-block
+				width: 100%
+				box-sizing: border-box
+				margin: 0
+		#content3
+			p
+				margin: 2px 0
+				padding-left: 10px
 
+			
+				
 
 
 		

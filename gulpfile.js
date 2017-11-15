@@ -19,6 +19,8 @@ var gulp           = require('gulp'),
 gulp.task('common-js', function() {
 	return gulp.src([
 		'app/js/common.js',
+		// 'app/js/owl-script.js',
+		''
 		])
 	.pipe(concat('common.min.js'))
 	// .pipe(uglify())
@@ -30,7 +32,9 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/owlcarousel/owl.carousel.min.js',
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'app/libs/hero-slider/main.js',
 		'app/libs/fotorama-4.6.4/fotorama.js',
+		'app/libs/waypoints/waypoints.js',
 		'app/libs/mmenu/jquery.mmenu.all.js',
 		'app/libs/mmenu/addons/setselected/jquery.mmenu.setselected.js',
 		'app/js/common.min.js', // Всегда в конце

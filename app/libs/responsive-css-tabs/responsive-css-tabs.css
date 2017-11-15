@@ -29,15 +29,15 @@
 }
 
 #more-popup label[for*='1']:before {
-  content: '\f1cb';
+  content: '\f044';
 }
 
 #more-popup label[for*='2']:before {
-  content: '\f17d';
+  content: '\f26c';
 }
 
-label[for*='3']:before {
-  content: '\f16b';
+#more-popup label[for*='3']:before {
+  content: '\f022';
 }
 
 label[for*='4']:before {
@@ -70,16 +70,19 @@ label[for*='4']:before {
 
 @media screen and (max-width: 650px) {
   #more-popup label {
-    font-size: 0;
+    
   }
 
   #more-popup label:before {
-    margin: 0;
     font-size: 18px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   #more-popup label {
+    font-size: 0;
     padding: 15px;
+  }
+  #more-popup label:before {
+    margin: 0;
   }
 }
